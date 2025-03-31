@@ -3,75 +3,65 @@ import React from "react";
 
 export const BlockchainIcon: React.FC = () => (
   <svg
-    width="61"
-    height="61"
-    viewBox="0 0 112 113"
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    width={61}
+    height={61}
+    fill="none"
   >
-    <g filter="url(#filter0_d_3314_480)">
+    <g filter="url(#a)">
       <circle
-        cx="56"
-        cy="49"
-        r="30.5"
-        fill="url(#paint0_linear_3314_480)"
+        cx={56}
+        cy={49}
+        r={30.5}
+        fill="url(#b)"
         shapeRendering="crispEdges"
-      ></circle>
+      />
     </g>
     <path
+      fill="#fff"
       fillRule="evenodd"
+      d="m65.862 43.487-.158-.282a2.339 2.339 0 0 0-.836-.825l-7.58-4.371a2.26 2.26 0 0 0-1.13-.305h-.328c-.396 0-.786.106-1.13.305l-7.579 4.383a2.259 2.259 0 0 0-.825.824l-.158.283a2.26 2.26 0 0 0-.305 1.13v8.754c.001.397.106.786.305 1.13l.159.282c.203.338.486.622.824.825l7.591 4.371c.342.204.732.31 1.13.305h.316a2.26 2.26 0 0 0 1.13-.305l7.58-4.383c.345-.193.63-.478.824-.824l.17-.283c.196-.344.301-.733.305-1.13v-8.754a2.26 2.26 0 0 0-.305-1.13ZM55.83 39.963h.327l6.62 3.818L56 47.69l-6.778-3.909 6.608-3.818Zm1.299 17.51 6.608-3.819.17-.282v-7.637l-6.778 3.92v7.817Z"
       clipRule="evenodd"
-      d="M65.8616 43.4874L65.7034 43.205C65.4995 42.8635 65.2118 42.5797 64.8675 42.3804L57.2877 38.0087C56.9445 37.8096 56.5549 37.7044 56.1581 37.7037H55.8305C55.4337 37.7044 55.0441 37.8096 54.7008 38.0087L47.121 42.3917C46.7787 42.5897 46.4944 42.874 46.2964 43.2163L46.1383 43.4987C45.9392 43.842 45.834 44.2316 45.8333 44.6284V53.383C45.834 53.7798 45.9392 54.1694 46.1383 54.5126L46.2964 54.795C46.4995 55.1334 46.7827 55.4166 47.121 55.6197L54.7121 59.9913C55.0536 60.1946 55.4444 60.3001 55.8418 60.2963H56.1581C56.5549 60.2956 56.9445 60.1904 57.2877 59.9913L64.8675 55.6084C65.2132 55.4149 65.4986 55.1295 65.6921 54.7837L65.8616 54.5013C66.0583 54.1571 66.1633 53.7681 66.1666 53.3717V44.6171C66.1659 44.2203 66.0607 43.8307 65.8616 43.4874ZM55.8305 39.963H56.1581L62.7777 43.7811L55.9999 47.6896L49.2221 43.7811L55.8305 39.963ZM57.1295 57.4722L63.7379 53.6541L63.9073 53.3716V45.7354L57.1295 49.6552V57.4722Z"
-      fill="white"
-    ></path>
+    />
     <defs>
-      <filter
-        id="filter0_d_3314_480"
-        x="0.15786"
-        y="0.760502"
-        width="111.684"
-        height="111.684"
-        filterUnits="userSpaceOnUse"
-        colorInterpolationFilters="sRGB"
-      >
-        <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix
-          in="SourceAlpha"
-          type="matrix"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
-        ></feColorMatrix>
-        <feOffset dy="7.60264"></feOffset>
-        <feGaussianBlur stdDeviation="12.6711"></feGaussianBlur>
-        <feComposite in2="hardAlpha" operator="out"></feComposite>
-        <feColorMatrix
-          type="matrix"
-          values="0 0 0 0 0.613889 0 0 0 0 0.624 0 0 0 0 0.866667 0 0 0 0.65 0"
-        ></feColorMatrix>
-        <feBlend
-          mode="normal"
-          in2="BackgroundImageFix"
-          result="effect1_dropShadow_3314_480"
-        ></feBlend>
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="effect1_dropShadow_3314_480"
-          result="shape"
-        ></feBlend>
-      </filter>
       <linearGradient
-        id="paint0_linear_3314_480"
-        x1="25.5"
-        y1="18.5"
-        x2="98.5576"
-        y2="36.8667"
+        id="b"
+        x1={25.5}
+        x2={98.558}
+        y1={18.5}
+        y2={36.867}
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#CBD6FC"></stop>
-        <stop offset="0.9999" stopColor="#9BAFFF"></stop>
-        <stop offset="1" stopColor="#004039" stopOpacity="0"></stop>
+        <stop stopColor="#CBD6FC" />
+        <stop offset={1} stopColor="#9BAFFF" />
+        <stop offset={1} stopColor="#004039" stopOpacity={0} />
       </linearGradient>
+      <filter
+        id="a"
+        width={111.684}
+        height={111.684}
+        x={0.158}
+        y={0.761}
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse"
+      >
+        <feFlood floodOpacity={0} result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset dy={7.603} />
+        <feGaussianBlur stdDeviation={12.671} />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix values="0 0 0 0 0.613889 0 0 0 0 0.624 0 0 0 0 0.866667 0 0 0 0.65 0" />
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_488" />
+        <feBlend
+          in="SourceGraphic"
+          in2="effect1_dropShadow_1_488"
+          result="shape"
+        />
+      </filter>
     </defs>
   </svg>
 );
@@ -185,18 +175,17 @@ export const FlagIcon: React.FC = () => (
 
 export const ArrowIcon: React.FC = () => (
   <svg
-    width="61"
-    height="61"
-    viewBox="0 0 112 113"
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    width={20}
+    height={20}
+    fill="none"
   >
     <path
-      d="M5 12H19M19 12L12 5M19 12L12 19"
-      stroke="white"
-      strokeWidth="2"
+      stroke="#fff"
       strokeLinecap="round"
       strokeLinejoin="round"
-    ></path>
+      strokeWidth={1.5}
+      d="M5 15 15 5m0 0H7.5M15 5v7.5"
+    />
   </svg>
 );

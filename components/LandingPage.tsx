@@ -16,9 +16,9 @@ import Footer from './Footer/Footer';
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden font-poppins">
       <Navbar />
-      <main>
+      <main className='pt-[6rem]'>
         {/* Main Hero Section */}
         <HeroSection />
 

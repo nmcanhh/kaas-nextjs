@@ -9,7 +9,7 @@ interface ProcessCardProps {
 
 function ProcessCard({ imageUrl, title, description }: ProcessCardProps) {
   return (
-    <article className="flex flex-col grow items-start p-11 w-full bg-[linear-gradient(104deg,#CBD6FC_0%,#9BAFFF_101.74%,rgba(0,64,57,0.00)_101.75%)] rounded-[30px] max-md:px-5 max-md:mt-10">
+    <article className="flex flex-col grow items-start p-11 bg-[linear-gradient(104deg,#CBD6FC_0%,#9BAFFF_101.74%,rgba(0,64,57,0.00)_101.75%)] rounded-[30px] max-md:px-5 max-md:mt-10 w-full">
       <img
         src={imageUrl}
         className="object-contain max-w-full rounded-none aspect-square w-[110px]"

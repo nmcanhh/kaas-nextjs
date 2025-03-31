@@ -4,25 +4,24 @@ import * as React from "react";
 interface FeatureCardProps {
   title: string;
   description: string;
+  icon: React.ReactNode;
 }
 
-function FeatureCard({ title, description }: FeatureCardProps) {
+function FeatureCard({ title, description, icon }: FeatureCardProps) {
   return (
-    <article className="grow px-11 pt-24 pb-11 mt-1.5 w-full bg-slate-50 rounded-[30px] max-md:px-5 max-md:mt-10">
-      <h3 className="text-2xl text-black">
-        {title.includes("&") ? (
-          <>
-            {title.split("&")[0]}
-            <br />& {title.split("&")[1]}
-          </>
-        ) : (
-          title
-        )}
-      </h3>
-      <p className="mt-5 w-60 text-base leading-6 text-neutral-600">
-        {description}
-      </p>
-    </article>
+    <div className="relative pt-8 w-full lg:max-w-[326px]">
+      <div className="absolute -top-[24px] left-8 z-10">
+        <div className="p-4 text-white bg-gradient-to-r from-[#CBD6FC] to-[#9BAFFF] w-[110px] h-[110px] rounded-2xl flex items-center justify-center shadow-sm">
+          {icon}
+        </div>
+      </div>
+      <div className="bg-white rounded-3xl shadow-sm overflow-hidden pt-10">
+        <div className="p-6 min-h-[204px]">
+          <h3 className="text-2xl text-black">{title}</h3>
+          <p className="mt-5 text-base text-neutral-600">{description}</p>
+        </div>
+      </div>
+    </div>
   );
 }
 

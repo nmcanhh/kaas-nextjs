@@ -13,11 +13,11 @@ const ProfileImage: React.FC<ProfileImageProps> = ({
 }) => {
   const sizeClasses = {
     large:
-      "w-[105px] h-[105px] max-lg:w-[80px] max-lg:h-[80px] max-sm:w-[60px] max-sm:h-[60px]",
+      "w-[130px] h-[130px] max-xl:w-[115px] max-xl:h-[115px] max-lg:w-[80px] max-lg:h-[80px] max-sm:w-[60px] max-sm:h-[60px]",
     medium:
-      "w-[80px] h-[80px] max-lg:w-[60px] max-lg:h-[60px] max-sm:w-[50px] max-sm:h-[50px]",
+      "w-[105px] h-[105px] max-xl:w-[90px] max-xl:h-[90px] max-lg:w-[60px] max-lg:h-[60px] max-sm:w-[50px] max-sm:h-[50px]",
     small:
-      "w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px]",
+      "w-[101px] h-[100px] max-xl:w-[85px] max-xl:h-[85px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px]",
   };
 
   return (

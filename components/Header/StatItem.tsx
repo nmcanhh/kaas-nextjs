@@ -11,9 +11,9 @@ const StatItem: React.FC<StatItemProps> = ({ iconSrc, text }) => {
       <img
         src={iconSrc}
         alt="Stat icon"
-        className="object-contain shrink-0 self-stretch my-auto w-10 aspect-square"
+        className="object-contain shrink-0 self-stretch my-auto w-10 aspect-square opacity-60"
       />
-      <p className="self-stretch my-auto">{text}</p>
+      <p className="self-stretch my-auto text-[#363636] opacity-60">{text}</p>
     </div>
   );
 };
