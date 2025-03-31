@@ -30,7 +30,7 @@ const MoneyMoveSection: React.FC = () => {
 
         {/* Left profile image */}
         <ProfileImage
-          src="/images/image-63.png"
+          src="images/image-63.png"
           className="hidden sm:block absolute left-[418px] top-[120px] md:left-[34px] lg:left-[26px] xl:left-[150px] 2xl:left-[278px] max-md:left-[50px] max-sm:left-2.5 max-sm:top-[50px]"
           size="medium"
         />
@@ -54,7 +54,7 @@ const MoneyMoveSection: React.FC = () => {
 
         {/* Right profile image */}
         <ProfileImage
-          src="/images/image-62.png"
+          src="images/image-62.png"
           className="absolute right-2.5 top-[122px] sm:right-0 sm:top-[114px] md:right-0 md:top-[230px] lg:right-[14px] lg:top-[300px] xl:right-[120px] xl:top-[218px] max-md:right-5  "
           size="large"
         />
@@ -69,7 +69,7 @@ const MoneyMoveSection: React.FC = () => {
 
         {/* Bottom profile image */}
         <ProfileImage
-          src="/images/image-64.jfif"
+          src="images/image-64.jfif"
           className="absolute right-[400px] bottom-[10px] max-sm:right-[274px] md:right-[340px] md:bottom-100px lg:right-[460px] xl:right-[700px] 2xl:right-[846px] 3xl:right-[768px] -translate-x-2/4 "
           size="small"
         />

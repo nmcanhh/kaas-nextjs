@@ -9,7 +9,7 @@ const techBuilders = [
   {
     companyName: "Napa Global",
     website: "napaglobal.com",
-    logoImage: "/images/image-25.png",
+    logoImage: "images/image-25.png",
     logoAlt: "Logo",
     cardTitle: "Scalable & Secure Blockchain Tech Solutions",
     description:
@@ -18,7 +18,7 @@ const techBuilders = [
   {
     companyName: "INNOTECH",
     website: "Innotech.vn",
-    logoImage: "/images/image-24.png",
+    logoImage: "images/image-24.png",
     logoAlt: "Logo",
     cardTitle: "Leading Fintech & Banking Software Provider",
     description:
@@ -31,8 +31,9 @@ const CompanyShowcase: React.FC = () => {
     <section className="bg-[#D6D7E0E5] pt-[48px] py-[80px]" >
       <TechBuildersHeader />
       <div className="flex flex-wrap justify-center gap-[81px] mt-[18px]">
-        {techBuilders.map(builder => (
+        {techBuilders.map((builder, index) => (
           <CompanyCard
+            key={index}
             logoImage={builder.logoImage}
             companyName={builder.companyName}
             website={builder.website}

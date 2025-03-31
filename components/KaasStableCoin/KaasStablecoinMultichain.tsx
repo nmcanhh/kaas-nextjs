@@ -6,32 +6,32 @@ import BlockchainIconRow from "./BlockchainIconRow";
 const KaasStablecoinMultichain: React.FC = () => {
   // First row of blockchain icons
   const firstRowIcons = [
-    "/images/stablecoin (1).png",
-    "/images/stablecoin (3).png",
-    "/images/stablecoin (2).png",
-    "/images/stablecoin (4).png",
-    "/images/stablecoin (5).png",
-    "/images/stablecoin (6).png",
+    "images/stablecoin(1).png",
+    "images/stablecoin(3).png",
+    "images/stablecoin(2).png",
+    "images/stablecoin(4).png",
+    "images/stablecoin(5).png",
+    "images/stablecoin(6).png",
   ];
 
   // Second row of blockchain icons
   const secondRowIcons = [
-    "/images/stablecoin (12).png",
-    "/images/stablecoin (13).png",
-    "/images/stablecoin (14).png",
-    "/images/stablecoin (15).png",
-    "/images/stablecoin (7).png",
-    "/images/stablecoin (16).png",
+    "images/stablecoin(12).png",
+    "images/stablecoin(13).png",
+    "images/stablecoin(14).png",
+    "images/stablecoin(15).png",
+    "images/stablecoin(7).png",
+    "images/stablecoin(16).png",
   ];
 
   // Third row of blockchain icons
   const thirdRowIcons = [
-    "/images/stablecoin (8).png",
-    "/images/stablecoin (9).png",
-    "/images/stablecoin (10).png",
-    "/images/stablecoin (11).png",
-    "/images/stablecoin (18).png",
-    "/images/stablecoin (17).png",
+    "images/stablecoin(8).png",
+    "images/stablecoin(9).png",
+    "images/stablecoin(10).png",
+    "images/stablecoin(11).png",
+    "images/stablecoin(18).png",
+    "images/stablecoin(17).png",
   ];
 
   return (
@@ -69,7 +69,7 @@ const KaasStablecoinMultichain: React.FC = () => {
 
       <figure className="mt-12 ml-0 max-md:flex max-md:justify-center">
         <img
-          src="/images/stable-background.png"
+          src="images/stable-background.png"
           className="object-contain h-[365px] w-[693px] max-md:w-full max-md:h-auto max-md:max-w-[693px]"
           alt="blockchain illustration"
         />

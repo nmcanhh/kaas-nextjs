@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
         <div className="flex gap-5 max-md:flex-col">
           <figure className="w-[55%] max-md:ml-0 max-md:w-full">
             <img
-              src="/images/image-55.png"
+              src="images/image-55.png"
               alt="Stablecoin services illustration"
               className="object-contain grow w-full aspect-[1.38] max-md:mt-10 max-md:max-w-full"
             />
@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
               </div>
               <GetStartedButton
                 text="get started"
-                iconSrc="/images/arrow-left.png"
+                iconSrc="images/arrow-left.png"
               />
             </div>
           </article>

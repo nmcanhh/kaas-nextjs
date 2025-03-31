@@ -5,44 +5,44 @@ import PartnerCard from "./PartnerCard";
 
 const partnersData = [
   {
-    profileImage: "/images/profile-1.png",
+    profileImage: "images/profile-1.png",
     profileAlt: "Profile",
     name: "Rebecca Emard",
     title: "Circle Partnership Manager",
-    logoImage: "/images/image-21.png",
+    logoImage: "images/image-21.png",
     logoAlt: "Logo",
     cardTitle: "Circle Sole Integration Partner",
     description:
       "At Circle, we're excited to partner with Kaas to integrate USDC, enabling secure, fast, and compliant stablecoin transactions for businesses worldwide.",
   },
   {
-    profileImage: "/images/profile-2.png",
+    profileImage: "images/profile-2.png",
     profileAlt: "Profile",
     name: "Mark Pham",
     title: "CEO of Innotech.vn",
-    logoImage: "/images/image-24.png",
+    logoImage: "images/image-24.png",
     logoAlt: "Logo",
     cardTitle: "Innotech Tech Builder",
     description:
       "Innotech partners with Napaglobal to develop Kaas, delivering the best stablecoin solution for TradFi with seamless integration and compliance.",
   },
   {
-    profileImage: "/images/profile-3.png",
+    profileImage: "images/profile-3.png",
     profileAlt: "Profile",
     name: "Peter Ngo",
     title: "Chairman of Napaglobal",
-    logoImage: "/images/image-25.png",
+    logoImage: "images/image-25.png",
     logoAlt: "Logo",
     cardTitle: "Napa Global Tech Builder",
     description:
       "Napaglobal, as the tech builder, provides high-level architecture and infrastructure for Kaas, ensuring scalability, security, and seamless stablecoin integration",
   },
   {
-    profileImage: "/images/profile-4.png",
+    profileImage: "images/profile-4.png",
     profileAlt: "Profile",
     name: "Solana",
     title: "Ecosystem Partner",
-    logoImage: "/images/image-23.png",
+    logoImage: "images/image-23.png",
     logoAlt: "Logo",
     cardTitle: "Solana Ecosystem Partner",
     description:

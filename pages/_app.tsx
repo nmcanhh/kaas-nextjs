@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return <>
     <Head>
       <title>Kaas by Napa & Innotech</title>
-      <link rel="icon" type="image/svg+xml" href="/icons/kaas.svg" />
+      <link rel="icon" type="image/svg+xml" href="icons/kaas.svg" />
     </Head>
     <Component {...pageProps} className="font-poppins" />
   </>

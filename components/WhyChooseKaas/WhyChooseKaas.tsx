@@ -23,7 +23,7 @@ export const WhyChooseKaas: React.FC = () => {
           fast settlement, and full compliance.
         </p>
         <Image
-          src="/images/image-1.png"
+          src="images/image-1.png"
           alt="USD Coin 3D"
           width={415}
           height={415}
@@ -31,7 +31,7 @@ export const WhyChooseKaas: React.FC = () => {
           priority
         />
         <Image
-          src="/images/image-2.png"
+          src="images/image-2.png"
           alt="USD Coin 3D"
           width={128}
           height={128}

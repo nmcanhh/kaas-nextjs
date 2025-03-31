@@ -26,7 +26,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({
 }) => {
   return (
     <article className="relative w-[379px]">
-      <section style={{ backgroundSize: '100% 100%' }} className="bg-[url(/images/Subtract.png)] bg-no-repeat bg-center relative p-[20px] pt-[13px] bg-[opacity-60] rounded-[32px]">
+      <section style={{ backgroundImage: "url('images/Subtract.png')", backgroundSize: '100% 100%' }} className="bg-no-repeat bg-center relative p-[20px] pt-[13px] bg-[opacity-60] rounded-[32px]">
         <header className="flex gap-3 mb-[10px] items-center">
           <Image
             src={profileImage}

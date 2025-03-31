@@ -11,7 +11,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Convert fiat currencies (VND, JPY, KRW, AED) to stablecoins (USDC, USDT, DAI) and vice versa with seamless API integration",
       imageUrl:
-        "/images/image-4.png",
+        "images/image-4.png",
       imageAlt: "Fiat-Stablecoin icon",
       isLarge: false
     },
@@ -20,7 +20,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Built-in KYC/AML APIs to ensure compliance-first transactions for financial institutions",
       imageUrl:
-        "/images/image-5.png",
+        "images/image-5.png",
       imageAlt: "Regulatory Compliance icon",
       isLarge: false
     },
@@ -29,7 +29,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Plug-and-play solutions for fintechs, neobanks, PSPs, and treasury teams to scale instantly",
       imageUrl:
-        "/images/image-8.png",
+        "images/image-8.png",
       imageAlt: "Enterprise APIs icon",
       isLarge: true
     },
@@ -38,7 +38,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Operate on Ethereum L2, BSC, Tron, Solana, Stellar for cross-border payments and settlements.",
       imageUrl:
-        "/images/image-6.png",
+        "images/image-6.png",
       imageAlt: "Multi-Chain Support icon",
       isLarge: false
     },
@@ -47,7 +47,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Direct connections with VNPay, MoMo, Napas, VietQR, Zengin, KFTC for smooth fiat settlements",
       imageUrl:
-        "/images/image-7.png",
+        "images/image-7.png",
       imageAlt: "Banking & PSP icon",
       isLarge: false
     },

@@ -19,7 +19,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
 }) => {
   return (
     <article className="flex relative flex-col px-5 py-3 min-h-[380px] max-md:mt-10">
-      <section style={{ backgroundSize: '100% 100%' }} className="w-[469px] max-sm:w-[400px] bg-[url(/images/builder-subtract.png)] bg-no-repeat bg-center relative p-[19px] pt-[13px] bg-[opacity-60] rounded-[32px]">
+      <section style={{ backgroundImage: "url('images/builder-subtract.png')", backgroundSize: '100% 100%' }} className="w-[469px] max-sm:w-[400px] bg-no-repeat bg-center relative p-[19px] pt-[13px] bg-[opacity-60] rounded-[32px]">
         <header className="flex relative gap-4 items-center self-start ml-5 max-md:ml-2.5">
           <img
             src={logoImage}

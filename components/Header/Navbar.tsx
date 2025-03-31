@@ -15,8 +15,8 @@ type Language = {
 }
 
 const languages: Language[] = [
-  { code: "en", name: "English", flag: "🇺🇸", flagSrc: "./images/image-13.png" },
-  { code: "vi", name: "Tiếng Việt", flag: "🇻🇳", flagSrc: "./images/image-69.png" },
+  { code: "en", name: "English", flag: "🇺🇸", flagSrc: "images/image-13.png" },
+  { code: "vi", name: "Tiếng Việt", flag: "🇻🇳", flagSrc: "images/image-69.png" },
 ]
 
 const Navbar: React.FC = () => {
@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
       <p className="self-stretch my-auto text-xs text-black rounded-none w-[226px]">
         <img
           className="w-[86px] lg:w-[131px]"
-          src="./icons/kaas.svg"
+          src="icons/kaas.svg"
           alt="Kaas"
         />
         A project of INNOTECH & NAPA GLOBAL
