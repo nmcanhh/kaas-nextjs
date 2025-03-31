@@ -36,7 +36,7 @@ const MoneyMoveSection: React.FC = () => {
         />
 
         {/* Left testimonial */}
-        <div className="absolute right-0 top-[266px] sm:left-0 sm:top-[-40px] md:top-[-28px] md:left-[-112px] lg:top-[252px] lg:left-[-115px] xl:left-[-114px] 2xl:left-0">
+        <div className="absolute right-0 top-[266px] sm:left-0 sm:top-[-60px] md:top-[-28px] md:left-[-112px] lg:top-[252px] lg:left-[-115px] xl:left-[-114px] 2xl:left-0">
           <TestimonialCard
             imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/f8bcc9227efaa4c2ca72b073a71ba72c0816a8a0"
             text="Sending money home with stablecoins is cheaper and arrives in minutes, unlike slow and costly bank transfers"
@@ -44,7 +44,7 @@ const MoneyMoveSection: React.FC = () => {
         </div>
         {/* xl:top-[64px] max-md:right-[50px] max-sm:right-2.5 max-sm:top-[50px] */}
         {/* Right testimonial */}
-        <div className="absolute top-[-40px] right-[-12px] md:top-0 md:right-[-110px] lg:right-[-80px] lg:top-[90px] xl:right-[50px] xl:top-[50px] 2xl:right-[164px]">
+        <div className="absolute top-[-68px] right-[-12px] md:top-0 md:right-[-110px] lg:right-[-80px] lg:top-[90px] xl:right-[50px] xl:top-[50px] 2xl:right-[164px]">
           <TestimonialCard
             imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/a9133ecc88959f0b29969a02c1a4f74f854e91b8"
             text="Getting paid in stablecoins means I receive money instantly, with lower fees and no bank delays"
@@ -55,7 +55,7 @@ const MoneyMoveSection: React.FC = () => {
         {/* Right profile image */}
         <ProfileImage
           src="/images/image-62.png"
-          className="absolute right-2.5 top-[122px] sm:right-0 sm:top-[100px] md:right-0 md:top-[230px] lg:right-[14px] lg:top-[300px] xl:right-[120px] xl:top-[218px] max-md:right-5  "
+          className="absolute right-2.5 top-[122px] sm:right-0 sm:top-[114px] md:right-0 md:top-[230px] lg:right-[14px] lg:top-[300px] xl:right-[120px] xl:top-[218px] max-md:right-5  "
           size="large"
         />
 

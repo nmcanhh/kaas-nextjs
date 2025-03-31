@@ -5,43 +5,45 @@ import PartnerCard from "./PartnerCard";
 
 const partnersData = [
   {
-    profileImage: "https://placehold.co/60x60/e4e4e4/e4e4e4",
+    profileImage: "/images/profile-1.png",
     profileAlt: "Profile",
     name: "Rebecca Emard",
     title: "Circle Partnership Manager",
-    logoImage: "https://placehold.co/60x60/e4e4e4/e4e4e4",
+    logoImage: "/images/image-21.png",
     logoAlt: "Logo",
     cardTitle: "Circle Sole Integration Partner",
     description:
       "At Circle, we're excited to partner with Kaas to integrate USDC, enabling secure, fast, and compliant stablecoin transactions for businesses worldwide.",
   },
   {
-    profileImage: "https://placehold.co/60x60/e4e4e4/e4e4e4",
+    profileImage: "/images/profile-2.png",
     profileAlt: "Profile",
     name: "Mark Pham",
     title: "CEO of Innotech.vn",
-    logoImage: "https://placehold.co/60x60/e4e4e4/e4e4e4",
+    logoImage: "/images/image-24.png",
     logoAlt: "Logo",
     cardTitle: "Innotech Tech Builder",
     description:
       "Innotech partners with Napaglobal to develop Kaas, delivering the best stablecoin solution for TradFi with seamless integration and compliance.",
   },
   {
-    profileImage: "https://placehold.co/60x60/e4e4e4/e4e4e4",
+    profileImage: "/images/profile-3.png",
     profileAlt: "Profile",
     name: "Peter Ngo",
     title: "Chairman of Napaglobal",
-    logoImage: "https://placehold.co/60x60/e4e4e4/e4e4e4",
+    logoImage: "/images/image-25.png",
     logoAlt: "Logo",
     cardTitle: "Napa Global Tech Builder",
     description:
       "Napaglobal, as the tech builder, provides high-level architecture and infrastructure for Kaas, ensuring scalability, security, and seamless stablecoin integration",
   },
   {
-    profileImage: "https://placehold.co/60x60/e4e4e4/e4e4e4",
+    profileImage: "/images/profile-4.png",
     profileAlt: "Profile",
     name: "Solana",
     title: "Ecosystem Partner",
+    logoImage: "/images/image-23.png",
+    logoAlt: "Logo",
     cardTitle: "Solana Ecosystem Partner",
     description:
       "Kaas is bringing seamless stablecoin payments to the Solana ecosystem, enabling ultra-fast, low-cost transactions for businesses in Vietnam and beyond",
@@ -50,7 +52,7 @@ const partnersData = [
 
 const PartnersGrid: React.FC = () => {
   return (
-    <section className="flex flex-wrap gap-8 justify-center p-6 max-md:p-5 max-sm:p-4">
+    <section className="bg-[#D6D7E0E5] flex flex-wrap gap-8 justify-center px-6 py-[128px] max-md:p-5 max-sm:p-4">
       {partnersData.map((partner, index) => (
         <PartnerCard
           key={index}

@@ -12,7 +12,7 @@ const BlockchainIconRow: React.FC<BlockchainIconRowProps> = ({
   altText = "blockchain icon",
 }) => {
   return (
-    <div className="flex gap-8 items-center max-md:flex-wrap max-md:justify-center max-sm:gap-4">
+    <div className="flex justify-between items-center max-md:flex-wrap max-md:justify-center max-sm:gap-4">
       {iconUrls.map((url, index) => (
         <img
           key={index}

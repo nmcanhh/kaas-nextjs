@@ -3,29 +3,43 @@
 import React from "react";
 import Image from "next/image";
 import CompanyCard from "./CompanyCard";
+import TechBuildersHeader from "./TechBuildersHeader";
+
+const techBuilders = [
+  {
+    companyName: "Napa Global",
+    website: "napaglobal.com",
+    logoImage: "/images/image-25.png",
+    logoAlt: "Logo",
+    cardTitle: "Scalable & Secure Blockchain Tech Solutions",
+    description:
+      "Napa Global specializes in fintech, blockchain, and enterprise software, delivering scalable, secure, and user-centric solutions for banks, fintech firms, and global enterprises, ensuring seamless digital transformation and optimized user experiences.",
+  },
+  {
+    companyName: "INNOTECH",
+    website: "Innotech.vn",
+    logoImage: "/images/image-24.png",
+    logoAlt: "Logo",
+    cardTitle: "Leading Fintech & Banking Software Provider",
+    description:
+      "Innotech Vietnam provides banking, cloud, and blockchain solutions, trusted by top financial institutions, fintech startups, and multinational corporations, offering high-performance, regulatory-compliant, and secure technology to drive financial innovation and digital transformation",
+  },
+];
 
 const CompanyShowcase: React.FC = () => {
   return (
-    <section className="flex gap-5 max-md:flex-col">
-      <div className="w-6/12 max-md:ml-0 max-md:w-full">
-        <CompanyCard
-          backgroundImage="/images/image-51.png"
-          logoImage="/images/image-52.png"
-          companyName="NAPA GLOBAL"
-          website="napaglobal.com"
-          title="Scalable & Secure Blockchain Tech Solutions"
-          description="Napa Global specializes in fintech, blockchain, and enterprise software, delivering scalable, secure, and user-centric solutions for banks, fintech firms, and global enterprises, ensuring seamless digital transformation and optimized user experiences."
-        />
-      </div>
-      <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-        <CompanyCard
-          backgroundImage="/images/image-53.png"
-          logoImage="/images/image-54.png"
-          companyName="INNOTECH"
-          website="Innotech.vn"
-          title="Leading Fintech & Banking Software Provider"
-          description="Innotech Vietnam provides banking, cloud, and blockchain solutions, trusted by top financial institutions, fintech startups, and multinational corporations, offering high-performance, regulatory-compliant, and secure technology to drive financial innovation and digital transformation"
-        />
+    <section className="bg-[#D6D7E0E5] pt-[48px] py-[80px]" >
+      <TechBuildersHeader />
+      <div className="flex flex-wrap justify-center gap-[81px] mt-[18px]">
+        {techBuilders.map(builder => (
+          <CompanyCard
+            logoImage={builder.logoImage}
+            companyName={builder.companyName}
+            website={builder.website}
+            title={builder.cardTitle}
+            description={builder.description}
+          />
+        ))}
       </div>
     </section>
   );

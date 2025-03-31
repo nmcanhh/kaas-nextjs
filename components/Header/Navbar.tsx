@@ -190,7 +190,7 @@ const Navbar: React.FC = () => {
           </button>
           <nav className="flex flex-col space-y-4">
             <Link
-              href="/"
+              href={config.homeHref}
               className="flex items-center space-x-2 text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -205,28 +205,28 @@ const Navbar: React.FC = () => {
               <span>Home</span>
             </Link>
             <Link
-              href="/solution"
+              href={config.solutionHref}
               className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Solution
             </Link>
             <Link
-              href="/services"
+              href={config.servicesHref}
               className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link
-              href="/about-innotech"
+              href={config.aboutInnotechHref}
               className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About Innotech
             </Link>
             <Link
-              href="/about-napa"
+              href={config.aboutNapaHref}
               className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >

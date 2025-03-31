@@ -34,7 +34,7 @@ export default function FeatureCardNew({ title,
           <div className="flex items-center justify-center">
             <img
               src={imageUrl}
-              className={`object-contain ${isLarge ? "w-[300px]" : "w-[102px]"}`}
+              className={`object-contain ${isLarge ? "w-[168px] lg:w-[300px]" : "w-[168px] md:w-[102px]"}`}
               alt={imageAlt}
             /></div>
           {isLarge && <div className="mt-8"></div>}

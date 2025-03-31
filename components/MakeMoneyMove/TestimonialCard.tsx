@@ -12,7 +12,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   imageClassName = "",
 }) => {
   return (
-    <article className="flex gap-2.5 justify-center items-center p-[13px] rounded-3xl shadow-lg bg-stone-50 w-[275px] max-md:w-[250px] max-sm:w-[260px]">
+    <article className="flex gap-2.5 justify-center items-center p-[13px] rounded-3xl shadow-lg bg-stone-50 w-[275px] max-md:w-[270px] max-sm:w-[260px]">
       <div className="flex gap-4 items-start">
         <img
           src={imageSrc}

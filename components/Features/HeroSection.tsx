@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
               </div>
               <GetStartedButton
                 text="get started"
-                iconSrc="/images/image-56.png"
+                iconSrc="/images/arrow-left.png"
               />
             </div>
           </article>
