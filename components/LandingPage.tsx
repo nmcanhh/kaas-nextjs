@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Header/Navbar';
 import HeroSection from './Header/HeroSection';
 import MarqueeText from './Header/MarqueeText';
@@ -13,12 +13,35 @@ import KaasServes from './KaasServer/KaasServes';
 import CompanyShowcase from './TechBuilder/CompanyShowcase';
 import FeaturesHero from './Features/HeroSection';
 import Footer from './Footer/Footer';
+import { useSection } from '@/contexts/SectionContext';
 
 const LandingPage: React.FC = () => {
+  const { setActiveSection } = useSection();
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, [setActiveSection]);
+
   return (
     <div className="w-full overflow-hidden font-poppins">
       <Navbar />
-      <main className='pt-[6rem]'>
+      <main className='pt-[6rem] bg-[#D6D7E0]'>
         {/* Main Hero Section */}
         <HeroSection />
 

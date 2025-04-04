@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import FeatureCard from "./FeatureCard";
 import FeatureCardNew from "./FeatureCardNew";
 
 const KaasKeyFeatures: React.FC = () => {
@@ -11,7 +10,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Convert fiat currencies (VND, JPY, KRW, AED) to stablecoins (USDC, USDT, DAI) and vice versa with seamless API integration",
       imageUrl:
-        "images/image-4.png",
+        "images/kaas-key-features/fiat-stablecoin-icon.png",
       imageAlt: "Fiat-Stablecoin icon",
       isLarge: false
     },
@@ -20,7 +19,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Built-in KYC/AML APIs to ensure compliance-first transactions for financial institutions",
       imageUrl:
-        "images/image-5.png",
+        "images/kaas-key-features/regulatory-compliance-icon.png",
       imageAlt: "Regulatory Compliance icon",
       isLarge: false
     },
@@ -29,7 +28,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Plug-and-play solutions for fintechs, neobanks, PSPs, and treasury teams to scale instantly",
       imageUrl:
-        "images/image-8.png",
+        "images/kaas-key-features/enterprise-apis-icon.png",
       imageAlt: "Enterprise APIs icon",
       isLarge: true
     },
@@ -38,7 +37,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Operate on Ethereum L2, BSC, Tron, Solana, Stellar for cross-border payments and settlements.",
       imageUrl:
-        "images/image-6.png",
+        "images/kaas-key-features/multi-chain-support-icon.png",
       imageAlt: "Multi-Chain Support icon",
       isLarge: false
     },
@@ -47,7 +46,7 @@ const KaasKeyFeatures: React.FC = () => {
       description:
         "Direct connections with VNPay, MoMo, Napas, VietQR, Zengin, KFTC for smooth fiat settlements",
       imageUrl:
-        "images/image-7.png",
+        "images/kaas-key-features/banking-psp-icon.png",
       imageAlt: "Banking & PSP icon",
       isLarge: false
     },
@@ -79,7 +78,7 @@ const KaasKeyFeatures: React.FC = () => {
 
     // Nếu có card Enterprise-Grade, tạo layout đặc biệt
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+      <section id="section2" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
         {featuresCopy.map((feature, index) => (
           <div
             key={index}
@@ -94,7 +93,7 @@ const KaasKeyFeatures: React.FC = () => {
             />
           </div>
         ))}
-      </div>
+      </section>
     )
   }
 

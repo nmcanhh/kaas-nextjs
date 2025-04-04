@@ -2,7 +2,7 @@ import React from "react";
 
 const DividerIcon: React.FC = () => (
   <img
-    src="https://cdn.builder.io/api/v1/image/assets/TEMP/fe9014a2a415939863a090f3b37dfed96a604385?placeholderIfAbsent=true&apiKey=c95e0d248e8b485b85a8e9d0f6ee1a87"
+    src="icons/kaas-small-icon.svg"
     alt="Divider"
     className="object-contain shrink-0 self-stretch my-auto aspect-[17/24] fill-indigo-500 w-[17px]"
   />

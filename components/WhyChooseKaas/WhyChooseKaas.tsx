@@ -7,8 +7,7 @@ import Image from 'next/image';
 
 export const WhyChooseKaas: React.FC = () => {
   const handleDemoRequest = () => {
-    // Handle demo request logic here
-    console.log("Demo requested");
+    window.open('https://form.typeform.com/to/byQ6w0ke ', '_blank')
   };
 
   return (
@@ -23,7 +22,7 @@ export const WhyChooseKaas: React.FC = () => {
           fast settlement, and full compliance.
         </p>
         <Image
-          src="images/image-1.png"
+          src="images/why-choose-kaas/usd-coin-3d-1.png"
           alt="USD Coin 3D"
           width={415}
           height={415}
@@ -31,7 +30,7 @@ export const WhyChooseKaas: React.FC = () => {
           priority
         />
         <Image
-          src="images/image-2.png"
+          src="images/why-choose-kaas/usd-coin-3d-2.png"
           alt="USD Coin 3D"
           width={128}
           height={128}

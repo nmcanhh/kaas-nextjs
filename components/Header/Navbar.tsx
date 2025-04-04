@@ -1,11 +1,11 @@
 'use client'
 
-import config from "@/utils/config";
+import { useSection } from "@/contexts/SectionContext";
 import clsx from "clsx";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { Link as LinkScroll } from "react-scroll";
 
 type Language = {
   code: string
@@ -15,11 +15,12 @@ type Language = {
 }
 
 const languages: Language[] = [
-  { code: "en", name: "English", flag: "🇺🇸", flagSrc: "images/image-13.png" },
-  { code: "vi", name: "Tiếng Việt", flag: "🇻🇳", flagSrc: "images/image-69.png" },
+  { code: "en", name: "English", flag: "🇺🇸", flagSrc: "images/header/lang-en.png" },
+  { code: "vi", name: "Tiếng Việt", flag: "🇻🇳", flagSrc: "images/header/lang-vn.png" },
 ]
 
 const Navbar: React.FC = () => {
+  const { activeSection } = useSection();
   const [scrolled, setScrolled] = useState(false)
   const [currentLanguage, setCurrentLanguage] = useState<Language>(languages[0])
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false)
@@ -82,27 +83,52 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <nav className={`${scrolled ? "fixed top-0 bg-white shadow-md" : "absolute bg-transparent"} pt-[1.5rem] pb-5 lg:pt-10 lg:pb-5 px-[2rem] top-0 left-0 right-0 z-50 flex flex-wrap gap-[0.5rem] justify-between items-center xl:px-20 max-w-full w-full`}>
+    <nav className={`${scrolled ? "select-none fixed top-0 bg-white shadow-md" : "absolute bg-transparent"} pt-[1.5rem] pb-5 lg:pt-10 lg:pb-5 px-[2rem] top-0 left-0 right-0 z-50 flex flex-wrap gap-[0.5rem] justify-between items-center xl:px-20 max-w-full w-full`}>
       <p className="self-stretch my-auto text-xs text-black rounded-none w-[226px]">
         <img
           className="w-[86px] lg:w-[131px]"
           src="icons/kaas.svg"
           alt="Kaas"
         />
-        A project of INNOTECH & NAPA GLOBAL
+        A project of <a href="https://napaglobal.com">Napaglobal.com</a>
       </p>
       <div className="hidden lg:flex flex-wrap gap-10 justify-center items-center self-stretch py-1.5 pr-8 pl-1.5 my-auto bg-slate-50 min-w-60 rounded-[290px] max-md:pr-5 max-md:max-w-full">
-        <div className="flex gap-1.5 justify-center items-center self-stretch px-4 py-2 my-auto bg-indigo-500 rounded-[40px] w-[52px]">
-          <img
-            src="./icons/home.svg"
-            alt="Home"
-            className="object-contain self-stretch my-auto w-5 aspect-square"
-          />
-        </div>
-        <Link className="self-stretch my-auto text-base font-medium text-center text-neutral-800" href={config.solutionHref}>Solution</Link>
-        <Link className="self-stretch my-auto text-base font-medium text-center text-neutral-800" href={config.servicesHref}>Services</Link>
-        <Link className="self-stretch my-auto text-base font-medium text-center text-neutral-800" href={config.aboutInnotechHref}>About Innotech</Link>
-        <Link className="self-stretch my-auto text-base font-medium text-center text-neutral-800" href={config.aboutNapaHref}>About Napa Global</Link>
+        <LinkScroll to="section1"
+          smooth={true}
+          duration={500}
+          offset={-200} className={clsx(
+            "cursor-pointer  flex gap-1.5 justify-center items-center self-stretch px-4 py-2 my-auto rounded-[40px] w-[52px]",
+            activeSection === 'section1' ? "bg-indigo-500" : "self-stretch my-auto text-base font-medium text-center text-neutral-800"
+          )}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={20}
+            height={19}
+            fill="none"
+          >
+            <path
+              stroke={activeSection === 'section1' ? "#FCFBF9" : "#6366F1"}
+              strokeWidth={1.5}
+              d="M1.667 9.67c0-1.907 0-2.86.432-3.651.433-.79 1.223-1.281 2.804-2.262L6.57 2.722C8.241 1.685 9.077 1.167 10 1.167s1.759.518 3.43 1.555l1.667 1.035c1.58.98 2.371 1.472 2.804 2.262.432.79.432 1.744.432 3.651v1.268c0 3.25 0 4.876-.976 5.885-.976 1.01-2.548 1.01-5.69 1.01H8.333c-3.142 0-4.714 0-5.69-1.01s-.976-2.635-.976-5.886V9.67Z"
+            />
+          </svg>
+        </LinkScroll>
+        <LinkScroll to="section2"
+          smooth={true}
+          duration={500}
+          offset={-400} className={clsx(
+            "cursor-pointer px-4 py-2 rounded-[40px] transition-all",
+            activeSection === 'section2' ? "bg-indigo-500 text-white" : "self-stretch my-auto text-base font-medium text-center text-neutral-800"
+          )}>Solution</LinkScroll>
+        <LinkScroll to="section3"
+          smooth={true}
+          duration={500}
+          offset={-100} className={clsx(
+            "cursor-pointer  px-4 py-2 rounded-[40px] transition-all",
+            activeSection === 'section3' ? "bg-indigo-500 text-white" : "self-stretch my-auto text-base font-medium text-center text-neutral-800"
+          )}>Services</LinkScroll>
+        <button className="self-stretch my-auto text-base font-medium text-center text-neutral-800" onClick={() => window.open('https://napaglobal.com/ ', '_blank')}>About Napa Global</button>
       </div>
 
       <div className="flex items-center space-x-4">
@@ -189,8 +215,10 @@ const Navbar: React.FC = () => {
             <X className="h-6 w-6 text-gray-700" />
           </button>
           <nav className="flex flex-col space-y-4">
-            <Link
-              href={config.homeHref}
+            <LinkScroll to="section1"
+              smooth={true}
+              duration={500}
+              offset={-400}
               className="flex items-center space-x-2 text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -203,35 +231,34 @@ const Navbar: React.FC = () => {
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
               <span>Home</span>
-            </Link>
-            <Link
-              href={config.solutionHref}
+            </LinkScroll>
+            <LinkScroll to="section2"
+              smooth={true}
+              duration={500}
+              offset={-260}
               className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Solution
-            </Link>
-            <Link
-              href={config.servicesHref}
+            </LinkScroll>
+            <LinkScroll to="section3"
+              smooth={true}
+              duration={500}
+              offset={-30}
               className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
-            </Link>
-            <Link
-              href={config.aboutInnotechHref}
-              className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              About Innotech
-            </Link>
-            <Link
-              href={config.aboutNapaHref}
-              className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </LinkScroll>
+            <button
+              className="text-gray-700 hover:text-[#6366F1] font-medium py-3 border-b border-gray-100 text-left"
+              onClick={() => {
+                setIsMobileMenuOpen(false)
+                window.open('https://napaglobal.com/', '_blank')
+              }}
             >
               About Napa Global
-            </Link>
+            </button>
 
             {/* Mobile Language Switcher */}
             <div className="py-3 border-b border-gray-100">

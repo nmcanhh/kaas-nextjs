@@ -6,7 +6,7 @@ import StatItem from "./StatItem";
 
 function HeroSection() {
   return (
-    <section className="flex flex-col items-center px-[3rem] bg-[#D6D7E0] bg-opacity-90">
+    <section id="section1" className="flex flex-col items-center px-[3rem] bg-opacity-90">
       <div className="pt-11 w-full max-w-[1440px] max-md:max-w-full">
         <div className="flex flex-col w-full max-md:max-w-full">
           <div className="self-end mr-5 w-full max-w-[1300px] max-md:mr-2.5 max-md:max-w-full">
@@ -14,7 +14,7 @@ function HeroSection() {
               <div className="flex gap-5 max-md:flex-col relative">
                 <div className="absolute hidden sm:block md:bottom-[-26px] md:left-[376px] lg:bottom-[-40px] lg:left-[412px] xxl:bottom-[-20px] xl:left-[360px] sm:bottom-[-6px] sm:left-[80px] sm:w-[122px] md:w-[178px] lg:w-[220px] xl:w-[282px]">
                   <img
-                    src="images/image-65.png"
+                    src="images/home/stablecoin-2.png"
                     alt="Stablecoin payment API illustration"
                     className="aspect-square"
                   />
@@ -52,7 +52,7 @@ function HeroSection() {
                 </div>
                 <div className="hidden sm:block sm:mt-[-146px] sm:ml-[288px] md:mt-[225px] md:ml-0 lg:mt-[40px] w-[56%] lg:w-full">
                   <img
-                    src="images/image-3.png"
+                    src="images/home/stablecoin-1.png"
                     alt="Stablecoin payment API illustration"
                     className="object-contain grow w-full aspect-square max-md:max-w-full"
                   />
