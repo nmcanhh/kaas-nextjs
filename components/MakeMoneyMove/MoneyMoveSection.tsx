@@ -9,11 +9,6 @@ import { MobileFeedback } from "./MobileFeedback";
 import animationData from './bridge.json'; // Nếu đặt trong public, import không được — xem lưu ý dưới
 import LottieAnimation from "./LottieAnimation";
 
-interface LottieViewProps {
-  animationData: object;
-  className?: string;
-}
-
 const MoneyMoveSection: React.FC = () => {
   return (
     <section className="relative px-32 py-24 w-full bg-white min-h-[screen] max-md:px-8 max-sm:px-4">
