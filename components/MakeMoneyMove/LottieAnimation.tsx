@@ -1,6 +1,9 @@
+'use client'
 // components/LottieAnimation.tsx
 import React from 'react';
-import Lottie from 'react-lottie';
+
+import dynamic from "next/dynamic";
+const DynamicLottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 interface LottieAnimationProps {
     animationData: object;
@@ -26,7 +29,7 @@ const LottieAnimation: React.FC<LottieAnimationProps> = ({
         },
     };
 
-    return <Lottie options={defaultOptions} height={height} width={width} />;
+    return <DynamicLottie options={defaultOptions} height={height} width={width} />;
 };
 
 export default LottieAnimation;

@@ -1,5 +1,3 @@
-import config from "@/utils/config";
-import Link from "next/link";
 import React from "react";
 
 interface CTAButtonProps {

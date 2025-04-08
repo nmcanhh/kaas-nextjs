@@ -1,13 +1,11 @@
 "use client";
 
 import React from "react";
-import TestimonialCard from "./TestimonialCard";
-import CircularBackground from "./CircularBackground";
-import ProfileImage from "./ProfileImage";
-import { FeedbackCard } from "./FeedbackCard";
-import { MobileFeedback } from "./MobileFeedback";
 import animationData from './bridge.json'; // Nếu đặt trong public, import không được — xem lưu ý dưới
 import LottieAnimation from "./LottieAnimation";
+import { MobileFeedback } from "./MobileFeedback";
+import ProfileImage from "./ProfileImage";
+import TestimonialCard from "./TestimonialCard";
 
 const MoneyMoveSection: React.FC = () => {
   return (
